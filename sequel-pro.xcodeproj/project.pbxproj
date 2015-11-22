@@ -3911,7 +3911,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_WARNINGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 				WARNING_CFLAGS = "-Wmost";
 			};
 			name = Distribution;
@@ -4236,7 +4236,7 @@
 				LEX_SUPPRESS_DEFAULT_RULE = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 				STRIP_INSTALLED_PRODUCT = NO;
 				WARNING_CFLAGS = "-Wmost";
 			};
@@ -4288,7 +4288,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_WARNINGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 				WARNING_CFLAGS = "-Wmost";
 			};
 			name = Release;

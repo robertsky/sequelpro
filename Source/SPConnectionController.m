@@ -1397,18 +1397,18 @@ static NSComparisonResult _compareFavoritesUsingKey(id favorite1, id favorite2, 
  */
 - (BOOL)_checkHost
 {
-	if ([self type] != SPSocketConnection && [[self host] isEqualToString:@"localhost"]) {
-		SPBeginAlertSheet(NSLocalizedString(@"You have entered 'localhost' for a non-socket connection", @"title of error when using 'localhost' for a network connection"),
-						  NSLocalizedString(@"Use 127.0.0.1", @"Use 127.0.0.1 button"),	// Main button
-						  NSLocalizedString(@"Connect via socket", @"Connect via socket button"),	// Alternate button
-						  nil,	// Other button
-						  [dbDocument parentWindow],	// Window to attach to
-						  self,	// Modal delegate
-						  @selector(localhostErrorSheetDidEnd:returnCode:contextInfo:),	// Did end selector
-						  nil,	// Contextual info for selectors
-						  NSLocalizedString(@"To MySQL, 'localhost' is a special host and means that a socket connection should be used.\n\nDid you mean to use a socket connection, or to connect to the local machine via a port?  If you meant to connect via a port, '127.0.0.1' should be used instead of 'localhost'.", @"message of error when using 'localhost' for a network connection"));
-		return NO;
-	}
+//	if ([self type] != SPSocketConnection && [[self host] isEqualToString:@"localhost"]) {
+//		SPBeginAlertSheet(NSLocalizedString(@"You have entered 'localhost' for a non-socket connection", @"title of error when using 'localhost' for a network connection"),
+//						  NSLocalizedString(@"Use 127.0.0.1", @"Use 127.0.0.1 button"),	// Main button
+//						  NSLocalizedString(@"Connect via socket", @"Connect via socket button"),	// Alternate button
+//						  nil,	// Other button
+//						  [dbDocument parentWindow],	// Window to attach to
+//						  self,	// Modal delegate
+//						  @selector(localhostErrorSheetDidEnd:returnCode:contextInfo:),	// Did end selector
+//						  nil,	// Contextual info for selectors
+//						  NSLocalizedString(@"To MySQL, 'localhost' is a special host and means that a socket connection should be used.\n\nDid you mean to use a socket connection, or to connect to the local machine via a port?  If you meant to connect via a port, '127.0.0.1' should be used instead of 'localhost'.", @"message of error when using 'localhost' for a network connection"));
+//		return NO;
+//	}
 	
 	return YES;
 }
